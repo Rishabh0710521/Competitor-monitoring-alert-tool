@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: competitor-watch
+    runtime: docker
+    plan: free
+    envVars:
+      - {key: KEYWORDS_EVERYWHERE_API_KEY, sync: false}
+      - {key: DATAFORSEO_LOGIN, sync: false}
+      - {key: DATAFORSEO_PASSWORD, sync: false}
+      - {key: SLACK_WEBHOOK_URL, sync: false}
